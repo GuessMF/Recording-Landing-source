@@ -1,0 +1,143 @@
+.examples {
+  //  background-color: rgb(71, 71, 70);
+}
+.examples-header {
+  h2 {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 52px;
+    /* identical to box height, or 125% */
+
+    letter-spacing: 0.0571015px;
+
+    color: #ffffff;
+    margin: 0;
+  }
+  p {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    /* or 150% */
+
+    letter-spacing: 0.0571015px;
+
+    color: #ffffff;
+    margin: 0;
+    margin-top: 11px;
+  }
+}
+.examples-table {
+  display: grid;
+  grid-template-columns: 516px 516px;
+  justify-content: space-between;
+  grid-row-gap: 30px;
+  grid-auto-rows: minmax(0, auto);
+
+  margin-top: 90px;
+
+  .example-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+
+    .preview {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      margin-top: 0;
+      background-color: #13151b;
+      width: 516px;
+      height: 292px;
+      border-radius: 20px;
+
+      .circle {
+        width: 64px;
+        height: 64px;
+        background-color: #08090d;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        img {
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
+    h4 {
+      margin: 0;
+      margin-top: 31px;
+
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 36px;
+      letter-spacing: 0.0571015px;
+      color: #ffffff;
+    }
+    p {
+      margin: 0;
+      margin-top: 10px;
+
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 26px;
+      letter-spacing: 0.0571015px;
+      color: #ffffff;
+    }
+  }
+  .right-item {
+    margin-top: 129px;
+  }
+  .big {
+    width: 516px !important;
+    height: 516px !important;
+  }
+  .empty {
+    margin-top: 80px;
+    .alert {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 103px;
+      height: 22px;
+      background: rgba(98, 29, 237, 0.2);
+      border-radius: 50px;
+
+      span {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+
+        color: #a37bf4;
+      }
+    }
+    h4 {
+      margin: 0;
+      margin-top: 7px;
+
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 36px;
+
+      color: #ffffff;
+    }
+    p {
+      margin: 0;
+      margin-top: 10px;
+
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 26px;
+
+      color: #ffffff;
+    }
+  }
+}

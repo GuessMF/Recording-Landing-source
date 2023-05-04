@@ -1,9 +1,435 @@
-body {
-    margin: 0;
-    background-color: aliceblue;
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 71px;
 }
 
-h1 {
-    font-size: 50px;
-    color: red;
+.header-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo img {
+    width: 24px;
+    height: 24px;
+}
+
+.header-logo h3 {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.0571015px;
+    color: #ffffff;
+    margin-left: 8px;
+}
+
+.header-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.header-nav li a {
+    text-decoration: none;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+    letter-spacing: 0.0571015px;
+    color: #ffffff;
+    margin-right: 32px;
+}
+
+.header-nav button {
+    width: 96px;
+    height: 35px;
+    background-color: #621ded;
+    border: none;
+    border-radius: 6px;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.279545px;
+    color: #ffffff;
+}
+
+.welcome-screen {
+    height: 740px;
+    height: -moz-fit-content;
+    height: fit-content;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 136px;
+    padding-bottom: 136px;
+}
+
+.wrapper img {
+    width: 127px;
+    height: 127px;
+}
+
+.wrapper h1 {
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 80px;
+    text-align: center;
+    letter-spacing: 0.0571015px;
+    width: 932px;
+    margin: 0;
+    margin-top: 86px;
+    color: #ffffff;
+}
+
+.wrapper p {
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.0571015px;
+    color: #ffffff;
+    margin: 0;
+    margin-top: 12px;
+}
+
+.wrapper button {
+    width: 202px;
+    height: 48px;
+    background-color: #621ded;
+    border-radius: 6px;
+    border: none;
+    margin-top: 32px;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.279545px;
+    color: #ffffff;
+}
+
+.examples-header h2 {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 52px;
+  /* identical to box height, or 125% */
+    letter-spacing: 0.0571015px;
+    color: #ffffff;
+    margin: 0;
+}
+
+.examples-header p {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+  /* or 150% */
+    letter-spacing: 0.0571015px;
+    color: #ffffff;
+    margin: 0;
+    margin-top: 11px;
+}
+
+.examples-table {
+    display: grid;
+    grid-template-columns: 516px 516px;
+    justify-content: space-between;
+    grid-row-gap: 30px;
+    grid-auto-rows: minmax(0, auto);
+    margin-top: 90px;
+}
+
+.examples-table .example-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: -moz-fit-content;
+    height: fit-content;
+}
+
+.examples-table .example-wrapper .preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    background-color: #13151b;
+    width: 516px;
+    height: 292px;
+    border-radius: 20px;
+}
+
+.examples-table .example-wrapper .preview .circle {
+    width: 64px;
+    height: 64px;
+    background-color: #08090d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.examples-table .example-wrapper .preview .circle img {
+    width: 32px;
+    height: 32px;
+}
+
+.examples-table .example-wrapper h4 {
+    margin: 0;
+    margin-top: 31px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.0571015px;
+    color: #ffffff;
+}
+
+.examples-table .example-wrapper p {
+    margin: 0;
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+    letter-spacing: 0.0571015px;
+    color: #ffffff;
+}
+
+.examples-table .right-item {
+    margin-top: 129px;
+}
+
+.examples-table .big {
+    width: 516px !important;
+    height: 516px !important;
+}
+
+.examples-table .empty {
+    margin-top: 80px;
+}
+
+.examples-table .empty .alert {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 103px;
+    height: 22px;
+    background: rgba(98, 29, 237, 0.2);
+    border-radius: 50px;
+}
+
+.examples-table .empty .alert span {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #a37bf4;
+}
+
+.examples-table .empty h4 {
+    margin: 0;
+    margin-top: 7px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #ffffff;
+}
+
+.examples-table .empty p {
+    margin: 0;
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+    color: #ffffff;
+}
+
+.designed {
+    padding: 0;
+    padding-top: 250px;
+}
+
+.designed .wrapper {
+    height: -moz-fit-content;
+    height: fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.designed .wrapper h2 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 52px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.designed .wrapper p {
+    width: 825px;
+    margin: 0;
+    margin-top: 11px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.designed .wrapper img {
+    width: 480px;
+    margin: 0;
+    margin-bottom: 0;
+    margin-top: 31px;
+}
+
+.reviews-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviews-title h3 {
+    margin: 0;
+    margin-top: 250px;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 52px;
+    text-align: center;
+    letter-spacing: 0.0571015px;
+    color: #ffffff;
+}
+
+.reviews-title p {
+    margin: 0;
+    margin-top: 11px;
+    margin-bottom: 63px;
+    width: 876px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.0571015px;
+    color: #ffffff;
+}
+
+.review-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.review-wrapper .review-container {
+    background: #13151b;
+    border-radius: 6px;
+    padding: 33px;
+    margin-bottom: 20px;
+}
+
+.review-wrapper .review-container .top {
+    display: flex;
+    flex-direction: row;
+}
+
+.review-wrapper .review-container .top img {
+    width: 48px;
+    margin-right: 8px;
+}
+
+.review-wrapper .review-container .top .left {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-wrapper .review-container .top .left .name {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 23px;
+    letter-spacing: 0.0571015px;
+    color: #ffffff;
+    margin: 0;
+}
+
+.review-wrapper .review-container .top .left .nickname {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 23px;
+    letter-spacing: 0.0571015px;
+    color: #ffffff;
+    margin: 0;
+}
+
+.review-wrapper .review-container .bottom {
+    margin-top: 20px;
+}
+
+.review-wrapper .review-container .bottom p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.0571015px;
+    color: #ffffff;
+}
+
+.reviews-wrapper-left {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews-wrapper-right {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews-footer {
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.reviews-footer p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.0571015px;
+    color: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    background-color: rgb(8, 9, 13);
+}
+
+.container {
+    max-width: 1200px;
+    background-color: rgba(8, 9, 13, 0.8);
+    margin: 0 auto;
+    padding: 0 20px;
 }

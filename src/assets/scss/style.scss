@@ -1,10 +1,22 @@
-//body stylrs
+//body styles
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+@import "./_header", "./_welcome-screen", "./_examples", "./_desingned",
+  "./_reviews";
 
 body {
   margin: 0;
-  background-color: aliceblue;
+  // background-color: #1e1e1e;
+  // background-color: rgba(8, 9, 13, 0.8);
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  background-color: rgba(8, 9, 13);
 }
-h1 {
-  font-size: 50px;
-  color: red;
+
+.container {
+  max-width: 1200px;
+  // background-color: rgb(47, 70, 70);
+  background-color: rgba(8, 9, 13, 0.8);
+  margin: 0 auto;
+  padding: 0 20px;
 }

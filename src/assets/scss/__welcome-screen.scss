@@ -1,0 +1,54 @@
+.welcome-screen {
+  height: 740px;
+  // background-color: rgb(71, 71, 70);
+  height: fit-content;
+}
+.wrapper {
+  //  border: black 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 136px;
+  // padding: 0 136px;
+  padding-bottom: 136px;
+  img {
+    width: 127px;
+    height: 127px;
+  }
+  h1 {
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 80px;
+    text-align: center;
+    letter-spacing: 0.0571015px;
+    width: 932px;
+    margin: 0;
+    margin-top: 86px;
+
+    color: #ffffff;
+  }
+  p {
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.0571015px;
+    color: #ffffff;
+
+    margin: 0;
+    margin-top: 12px;
+  }
+  button {
+    width: 202px;
+    height: 48px;
+
+    background-color: #621ded;
+    border-radius: 6px;
+    border: none;
+    margin-top: 32px;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.279545px;
+    color: #ffffff;
+  }
+}
