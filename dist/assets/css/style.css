@@ -39,6 +39,12 @@
     padding: 0;
 }
 
+@media (max-width: 580px) {
+    .header-nav {
+        display: none;
+    }
+}
+
 .header-nav li a {
     text-decoration: none;
     font-family: "Manrope";
@@ -64,6 +70,18 @@
     line-height: 19px;
     letter-spacing: 0.279545px;
     color: #ffffff;
+}
+
+.hamburger {
+    display: none;
+    color: red;
+    font-size: 30px;
+}
+
+@media (max-width: 580px) {
+    .hamburger {
+        display: block;
+    }
 }
 
 .welcome-screen {
@@ -96,6 +114,12 @@
     margin: 0;
     margin-top: 86px;
     color: #ffffff;
+}
+
+@media (max-width: 1000px) {
+    .wrapper h1 {
+        width: 100%;
+    }
 }
 
 .wrapper p {
@@ -155,6 +179,12 @@
     margin-top: 90px;
 }
 
+@media (max-width: 1080px) {
+    .examples-table {
+        grid-template-columns: 45% 45%;
+    }
+}
+
 .examples-table .example-wrapper {
     display: flex;
     flex-direction: column;
@@ -172,6 +202,12 @@
     width: 516px;
     height: 292px;
     border-radius: 20px;
+}
+
+@media (max-width: 1080px) {
+    .examples-table .example-wrapper .preview {
+        width: 100%;
+    }
 }
 
 .examples-table .example-wrapper .preview .circle {
@@ -217,6 +253,13 @@
 .examples-table .big {
     width: 516px !important;
     height: 516px !important;
+}
+
+@media (max-width: 1080px) {
+    .examples-table .big {
+        width: 43vw !important;
+        height: 43vw !important;
+    }
 }
 
 .examples-table .empty {
@@ -293,11 +336,24 @@
     color: #ffffff;
 }
 
+@media (max-width: 1000px) {
+    .designed .wrapper p {
+        width: 100%;
+    }
+}
+
 .designed .wrapper img {
     width: 480px;
     margin: 0;
     margin-bottom: 0;
     margin-top: 31px;
+}
+
+@media (max-width: 550px) {
+    .designed .wrapper img {
+        width: 90vw;
+        height: 23vw;
+    }
 }
 
 .reviews-title {
@@ -331,10 +387,22 @@
     color: #ffffff;
 }
 
+@media (max-width: 1000px) {
+    .reviews-title p {
+        width: 100%;
+    }
+}
+
 .review-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+    .review-wrapper {
+        flex-direction: column;
+    }
 }
 
 .review-wrapper .review-container {
@@ -398,10 +466,22 @@
     flex-direction: column;
 }
 
+@media (max-width: 600px) {
+    .reviews-wrapper-left {
+        width: 100%;
+    }
+}
+
 .reviews-wrapper-right {
     width: 49%;
     display: flex;
     flex-direction: column;
+}
+
+@media (max-width: 600px) {
+    .reviews-wrapper-right {
+        width: 100%;
+    }
 }
 
 .reviews-footer {
@@ -456,15 +536,23 @@
     justify-content: space-between;
 }
 
+@media (max-width: 1080px) {
+    .payment-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 .payment-wrapper .payment-block {
     display: grid;
-    width: 365px;
-    width: 250px;
+    width: 280px;
     height: 566px;
     background: #13151b;
     border: 1px solid #1b1e26;
     border-radius: 6px;
     padding: 50px;
+    justify-content: center;
 }
 
 .payment-wrapper .payment-block .payment-block__header h3 {
@@ -493,6 +581,14 @@
     font-size: 17px;
     line-height: 26px;
     color: #ffffff;
+}
+
+@media (max-width: 1080px) {
+    .payment-wrapper .payment-block .payment-block__header {
+        width: -moz-fit-content;
+        width: fit-content;
+        margin: 0 auto;
+    }
 }
 
 .payment-wrapper .payment-block ul {
@@ -536,10 +632,34 @@
     color: #ffffff;
 }
 
+@media (max-width: 1200px) {
+    .payment-wrapper .payment-block {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .payment-wrapper .payment-block {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .payment-wrapper .payment-block {
+        width: 40%;
+        height: 400px;
+        margin-bottom: 50px;
+    }
+}
+
 .payment-wrapper .extended {
     border: 1px solid rgba(98, 29, 237, 0.2);
     box-shadow: 0px 0px 60px rgba(98, 29, 237, 0.2);
     border-radius: 6px;
+}
+
+.payment-wrapper .extended .payment-block__header {
+    width: 200px;
 }
 
 .payment-wrapper .extended .payment-block__header h3 {
@@ -581,16 +701,29 @@
     margin-top: 64px;
 }
 
+@media (max-width: 850px) {
+    .questions .questions-list {
+        margin-left: 0;
+    }
+}
+
 .questions .questions-list li {
     display: flex;
     flex-direction: row;
-    justify-content: start;
+}
+
+.questions .questions-list li .extra {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 36px;
-    color: #ffffff;
-    margin-bottom: 32px;
+}
+
+@media (max-width: 850px) {
+    .questions .questions-list li .extra {
+        width: 5%;
+    }
 }
 
 .questions .questions-list li .circle {
@@ -608,6 +741,20 @@
 
 .questions .questions-list li .circle img {
     width: 11.83px;
+}
+
+.questions .questions-list li span {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #ffffff;
+    margin-bottom: 32px;
+}
+
+@media (max-width: 850px) {
+    .questions .questions-list li span {
+        width: 95%;
+    }
 }
 
 .footer {
@@ -687,6 +834,10 @@ body {
     font-style: normal;
     font-weight: 400;
     background-color: rgb(8, 9, 13);
+}
+
+html {
+    overflow-x: hidden;
 }
 
 .container {

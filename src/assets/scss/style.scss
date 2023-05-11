@@ -11,6 +11,9 @@ body {
   font-weight: 400;
   background-color: rgba(8, 9, 13);
 }
+html {
+  overflow-x: hidden;
+}
 
 .container {
   max-width: 1200px;

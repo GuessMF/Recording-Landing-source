@@ -36,8 +36,10 @@
   justify-content: space-between;
   grid-row-gap: 30px;
   grid-auto-rows: minmax(0, auto);
-
   margin-top: 90px;
+  @media (max-width: 1080px) {
+    grid-template-columns: 45% 45%;
+  }
 
   .example-wrapper {
     display: flex;
@@ -55,6 +57,9 @@
       width: 516px;
       height: 292px;
       border-radius: 20px;
+      @media (max-width: 1080px) {
+        width: 100%;
+      }
 
       .circle {
         width: 64px;
@@ -98,6 +103,10 @@
   .big {
     width: 516px !important;
     height: 516px !important;
+    @media (max-width: 1080px) {
+      width: 43vw !important;
+      height: 43vw !important;
+    }
   }
   .empty {
     margin-top: 80px;

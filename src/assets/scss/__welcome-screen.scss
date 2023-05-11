@@ -27,6 +27,9 @@
     margin-top: 86px;
 
     color: #ffffff;
+    @media (max-width: 1000px) {
+      width: 100%;
+    }
   }
   p {
     font-size: 24px;

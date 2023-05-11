@@ -32,16 +32,22 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  @media (max-width: 1080px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
   .payment-block {
     display: grid;
-    width: 365px;
-    width: 250px;
+    width: 280px;
     height: 566px;
     background: #13151b;
     border: 1px solid #1b1e26;
     border-radius: 6px;
     padding: 50px;
+    justify-content: center;
+
     .payment-block__header {
       h3 {
         font-weight: 400;
@@ -54,7 +60,6 @@
       }
       h1 {
         margin: 0;
-
         font-weight: 400;
         font-size: 50px;
         line-height: 68px;
@@ -69,6 +74,10 @@
         font-size: 17px;
         line-height: 26px;
         color: #ffffff;
+      }
+      @media (max-width: 1080px) {
+        width: fit-content;
+        margin: 0 auto;
       }
     }
 
@@ -116,6 +125,18 @@
 
       color: #ffffff;
     }
+
+    @media (max-width: 1200px) {
+      padding: 40px;
+    }
+    @media (max-width: 1150px) {
+      padding: 30px;
+    }
+    @media (max-width: 1080px) {
+      width: 40%;
+      height: 400px;
+      margin-bottom: 50px;
+    }
   }
   .extended {
     border: 1px solid rgba(98, 29, 237, 0.2);
@@ -123,8 +144,15 @@
     border-radius: 6px;
 
     .payment-block__header {
+      width: 200px;
+      //  background-color: #ffffff;
       h3 {
         color: #a37bf4;
+      }
+
+      @media (max-width: 1080px) {
+        // width: fit-content;
+        // margin: 0 auto;
       }
     }
     button {

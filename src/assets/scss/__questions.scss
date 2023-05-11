@@ -25,7 +25,21 @@
     width: fit-content;
     margin-left: 100px;
     margin-top: 64px;
+    @media (max-width: 850px) {
+      margin-left: 0;
+    }
     li {
+      .extra {
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width: 850px) {
+          width: 5%;
+        }
+      }
       .circle {
         background-color: aquamarine;
         width: 21px;
@@ -43,13 +57,18 @@
       }
       display: flex;
       flex-direction: row;
-      justify-content: start;
-      align-items: center;
-      font-weight: 400;
-      font-size: 24px;
-      line-height: 36px;
-      color: #ffffff;
-      margin-bottom: 32px;
+      // justify-content: start;
+      // align-items: center;
+      span {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+        color: #ffffff;
+        margin-bottom: 32px;
+        @media (max-width: 850px) {
+          width: 95%;
+        }
+      }
     }
   }
 }
