@@ -1,15 +1,21 @@
 .questions {
   .questions-title {
     margin-top: 252px;
-    h1 {
+    @media (max-width: 430px) {
+      margin-top: 100px;
+    }
+    h2 {
       margin: 0;
       font-weight: 400;
       font-size: 42px;
       line-height: 52px;
       text-align: center;
       color: #ffffff;
+      @media (max-width: 430px) {
+        font-size: 32px;
+      }
     }
-    h4 {
+    p {
       margin: 0;
       font-weight: 400;
       font-size: 24px;
@@ -17,11 +23,13 @@
       text-align: center;
       color: #ffffff;
       margin-top: 10px;
+      @media (max-width: 430px) {
+        font-size: 16px;
+      }
     }
   }
   .questions-list {
     margin: 0;
-    // background-color: rgb(63, 63, 63);
     width: fit-content;
     margin-left: 100px;
     margin-top: 64px;
@@ -45,7 +53,7 @@
         width: 21px;
         height: 21px;
         background: #13151b;
-        border-radius: 1000px;
+        border-radius: 100px;
         margin-right: 16px;
         display: flex;
         flex-direction: column;
@@ -54,11 +62,14 @@
         img {
           width: 11.83px;
         }
+        @media (max-width: 430px) {
+          width: 16px;
+          height: 16px;
+          margin-top: 10px;
+        }
       }
       display: flex;
       flex-direction: row;
-      // justify-content: start;
-      // align-items: center;
       span {
         font-weight: 400;
         font-size: 24px;
@@ -67,6 +78,10 @@
         margin-bottom: 32px;
         @media (max-width: 850px) {
           width: 95%;
+        }
+        @media (max-width: 430px) {
+          font-size: 16px;
+          line-height: 25px;
         }
       }
     }

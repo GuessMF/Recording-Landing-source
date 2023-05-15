@@ -3,6 +3,18 @@
   flex-direction: row;
   justify-content: space-between;
   height: 71px;
+
+  position: fixed;
+  max-width: 1200px;
+  width: 96%;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  background-color: rgba(8, 9, 13);
+  @media (max-width: 430px) {
+    width: 90%;
+  }
 }
 .header-logo {
   display: flex;
@@ -47,8 +59,6 @@
       letter-spacing: 0.0571015px;
       color: #ffffff;
       margin-right: 32px;
-
-      //   border: black 1px solid;
     }
   }
   button {
@@ -57,7 +67,6 @@
     background-color: #621ded;
     border: none;
     border-radius: 6px;
-
     font-family: "Manrope";
     font-style: normal;
     font-weight: 400;
@@ -69,9 +78,105 @@
   }
 }
 .hamburger {
+  display: flex;
+  align-items: center;
   display: none;
-  color: red;
-  font-size: 30px;
+  .menu-btn {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    border: #4715a9 2px solid;
+    border-radius: 15px;
+    margin-top: 18px;
+    span {
+      width: 20px;
+      height: 2px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #621ded;
+      transition: all 0.5s;
+
+      &:nth-of-type(2) {
+        top: calc(50% - 5px);
+      }
+      &:nth-of-type(3) {
+        top: calc(50% + 5px);
+      }
+    }
+    .active {
+      &:nth-of-type(1) {
+        display: none;
+      }
+      &:nth-of-type(2) {
+        top: 13px;
+        left: 9px;
+        width: 13px;
+        height: 3px;
+        transform: skew(0, 45deg);
+      }
+      &:nth-of-type(3) {
+        top: 13px;
+        left: 9px;
+        width: 13px;
+        height: 3px;
+
+        transform: skew(0, -45deg);
+      }
+    }
+  }
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(8, 9, 13);
+    transform: translateX(-100%);
+    transition: transform 0.5s;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20vh;
+    ul {
+      li {
+        list-style-type: none;
+
+        a {
+          text-decoration: none;
+          font-family: "Manrope";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 34px;
+          line-height: 80px;
+          letter-spacing: 0.0571015px;
+          color: #ffffff;
+        }
+      }
+      button {
+        width: 90%;
+        height: 35px;
+        background-color: #621ded;
+        border: none;
+        border-radius: 6px;
+        font-family: "Manrope";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: #ffffff;
+        margin-top: 40px;
+      }
+    }
+  }
+  .active {
+    transform: translateX(0);
+  }
+
   @media (max-width: 580px) {
     display: block;
   }

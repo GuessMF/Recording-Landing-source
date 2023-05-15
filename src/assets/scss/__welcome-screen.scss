@@ -1,17 +1,15 @@
 .welcome-screen {
   height: 740px;
-  // background-color: rgb(71, 71, 70);
   height: fit-content;
 }
 .wrapper {
-  //  border: black 1px solid;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: 136px;
-  // padding: 0 136px;
   padding-bottom: 136px;
+
   img {
     width: 127px;
     height: 127px;
@@ -30,6 +28,11 @@
     @media (max-width: 1000px) {
       width: 100%;
     }
+    @media (max-width: 430px) {
+      font-size: 36px;
+      line-height: 60px;
+      margin-top: 40px;
+    }
   }
   p {
     font-size: 24px;
@@ -40,6 +43,9 @@
 
     margin: 0;
     margin-top: 12px;
+    @media (max-width: 430px) {
+      font-size: 16px;
+    }
   }
   button {
     width: 202px;
@@ -53,5 +59,8 @@
     line-height: 19px;
     letter-spacing: 0.279545px;
     color: #ffffff;
+    @media (max-width: 430px) {
+      font-size: 12px;
+    }
   }
 }

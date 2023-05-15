@@ -4,10 +4,29 @@
   flex-direction: row;
   justify-content: space-between;
   margin-top: 240px;
+  flex-wrap: wrap;
+  @media (max-width: 650px) {
+    flex-direction: row;
+
+    flex-flow: wrap-reverse;
+    margin-top: 190px;
+  }
+  @media (max-width: 430px) {
+    margin-top: 100px;
+  }
+  @media (max-width: 365px) {
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+  }
 
   .footer-left {
     display: flex;
     flex-direction: column;
+    @media (max-width: 650px) {
+      width: 100%;
+      align-items: center;
+      margin-top: 50px;
+    }
 
     .brand-block {
       display: flex;
@@ -36,8 +55,11 @@
         font-weight: 400;
         font-size: 13px;
         line-height: 20px;
-        letter-spacing: 0.0571015px;
+
         color: #ffffff;
+        @media (max-width: 430px) {
+          font-size: 10px;
+        }
       }
     }
   }
@@ -51,6 +73,10 @@
       color: #ffffff;
       margin: 0;
       margin-bottom: 15px;
+      @media (max-width: 430px) {
+        font-size: 14px;
+        line-height: 20px;
+      }
     }
   }
   .footer-right {
@@ -63,6 +89,10 @@
       color: #ffffff;
       margin: 0;
       margin-bottom: 15px;
+      @media (max-width: 430px) {
+        font-size: 14px;
+        line-height: 20px;
+      }
     }
   }
 }
