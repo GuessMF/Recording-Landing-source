@@ -31,12 +31,13 @@
     .brand-block {
       display: flex;
       flex-direction: row;
-      h6 {
+      a {
         font-weight: 400;
         font-size: 16px;
         line-height: 22px;
         color: #ffffff;
         margin: 0;
+        text-decoration: none;
       }
       margin: 0;
       img {
@@ -47,6 +48,7 @@
     .copyright-block {
       display: flex;
       flex-direction: row;
+      flex-direction: column;
       margin: 0;
       margin-top: 16px;
       p {
@@ -61,6 +63,20 @@
           font-size: 10px;
         }
       }
+
+      .github-link {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        margin-top: 16px;
+        cursor: pointer;
+      }
+      img {
+        width: 20px;
+        margin-right: 10px;
+        filter: invert(100%);
+      }
     }
   }
   .footer-middle {
@@ -73,6 +89,14 @@
       color: #ffffff;
       margin: 0;
       margin-bottom: 15px;
+
+      cursor: pointer;
+      transition: all 0.2s;
+
+      &:hover {
+        color: #9369e6;
+      }
+
       @media (max-width: 430px) {
         font-size: 14px;
         line-height: 20px;
@@ -89,6 +113,14 @@
       color: #ffffff;
       margin: 0;
       margin-bottom: 15px;
+
+      cursor: pointer;
+      transition: all 0.2s;
+
+      &:hover {
+        color: #9369e6;
+      }
+
       @media (max-width: 430px) {
         font-size: 14px;
         line-height: 20px;

@@ -12,3 +12,8 @@ menuBtn.addEventListener("click", () => {
     ? (document.body.style.position = "fixed")
     : (document.body.style.position = "static");
 });
+
+// let ghLink = document.querySelector(".github-link");
+// ghLink.addEventListener("click", () => {
+//   window.open("https://www.google.com");
+// });

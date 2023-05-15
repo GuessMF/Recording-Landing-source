@@ -1,5 +1,6 @@
 .examples {
   //  background-color: rgb(71, 71, 70);
+  padding-top: 100px;
 }
 .examples-header {
   h2 {
@@ -55,6 +56,7 @@
       width: 516px;
       height: 292px;
       border-radius: 20px;
+
       @media (max-width: 1080px) {
         width: 100%;
       }
@@ -72,6 +74,13 @@
         justify-content: center;
         align-items: center;
         border-radius: 50px;
+
+        cursor: pointer;
+        transition: all 0.2s;
+        &:hover {
+          background-color: #560dea;
+        }
+
         img {
           width: 32px;
           height: 32px;
